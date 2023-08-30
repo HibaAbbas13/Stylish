@@ -39,7 +39,7 @@ class _SignupPageState extends State<SignupPage> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _passwordController1 = TextEditingController();
-  final _passwordController2 = TextEditingController();
+
   var password;
   @override
   Widget build(BuildContext context) {
