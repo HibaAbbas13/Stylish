@@ -1,0 +1,31 @@
+class AppIcons {
+  //static String menu = 'assets/icons/menu.png';
+  static String mic = 'assets/icons/mic.svg';
+  static String menu = 'assets/icons/menu.svg';
+  static String home = 'assets/icons/home.svg';
+  static String search = 'assets/icons/search.svg';
+  static String settings = 'assets/icons/settings.svg';
+  static String shopping = 'assets/icons/shopping.svg';
+  static String search1 = 'assets/icons/search1.svg';
+  static String heart = 'assets/icons/heart.svg';
+  static String fliter = 'assets/icons/filter.svg';
+  static String sort = 'assets/icons/sort.svg';
+  static String done = 'assets/icons/done.svg';
+  static String clock = 'assets/icons/clock.svg';
+  static String calender = 'assets/icons/calender.svg';
+  static String kLock = 'assets/icons/lock.svg';
+  static String kUser = 'assets/icons/User.svg';
+  static String kmail = 'assets/icons/Mail.svg';
+  static String arrow = 'assets/icons/arrow.svg';
+  static String buy = 'assets/icons/buy.svg';
+  static String cart = 'assets/icons/cart.svg';
+  static String near = 'assets/icons/NEAR.svg';
+  static String retun = 'assets/icons/RETURN.svg';
+  static String lock2 = 'assets/icons/llock2.svg';
+  static String cart2 = 'assets/icons/cart2.svg';
+  static String finger = 'assets/icons/finger.svg';
+  static String location = 'assets/icons/location.svg';
+  static String edit = 'assets/icons/edit.svg';
+  static String add = 'assets/icons/add.svg';
+  static String coupon = 'assets/icons/coupon.svg';
+}
