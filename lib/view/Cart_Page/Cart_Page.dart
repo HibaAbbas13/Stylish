@@ -8,7 +8,7 @@ import '../../data/app_colors.dart';
 import '../../data/app_typography.dart';
 import '../../models/Checkoutmodel.dart';
 
-import 'components/CustomContainer.dart';
+import 'components/DropDownContainer.dart';
 
 class CartPage extends StatefulWidget {
   final CheckoutModel checkoutItem;
@@ -91,14 +91,14 @@ class _CartPageState extends State<CartPage> {
                           ),
                           Row(
                             children: [
-                              const CustomContainer(
+                              const DropDownContainer(
                                 text1: 'Size ',
                                 text2: ' 42',
                               ),
                               SizedBox(
                                 width: 12.w,
                               ),
-                              const CustomContainer(
+                              const DropDownContainer(
                                 text1: 'QTY ',
                                 text2: ' 1',
                               ),

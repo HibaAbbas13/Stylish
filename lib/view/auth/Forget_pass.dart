@@ -7,7 +7,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../data/app_colors.dart';
 import '../Landing_page/landing_page.dart';
 import '../components/Primary_button.dart';
-import 'components/Auth_Field.dart';
+import 'components/AuthField.dart';
 
 final _formKey = GlobalKey<FormState>();
 
@@ -53,7 +53,6 @@ class _ForgotPassState extends State<ForgotPass> {
                   controller: _emailController,
                   hintText: 'Username or Email',
                   icon: AppIcons.kmail,
-                  confirmPassword: false,
                 ),
               ),
               SizedBox(

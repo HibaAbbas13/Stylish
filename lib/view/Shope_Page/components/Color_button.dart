@@ -8,10 +8,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../data/app_colors.dart';
 import '../../../data/app_typography.dart';
 
-class ColorCard extends StatelessWidget {
+class ColorButton extends StatelessWidget {
   final ColorButtonModel colorbutton;
 
-  const ColorCard({
+  const ColorButton({
     super.key,
     required this.colorbutton,
   });

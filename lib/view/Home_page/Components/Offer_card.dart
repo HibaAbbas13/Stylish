@@ -7,11 +7,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../data/app_colors.dart';
 
 class OffersCard extends StatelessWidget {
-  OffersCard({
+  const OffersCard({
     super.key,
     required TextEditingController controller,
   });
 
+  @override
   Widget build(BuildContext context) {
     return Container(
       width: 343.w,

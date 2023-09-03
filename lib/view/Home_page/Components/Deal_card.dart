@@ -74,7 +74,7 @@ class _DealCardState extends State<DealCard> {
                         context,
                         MaterialPageRoute(
                             builder: (BuildContext context) =>
-                                const Trending_Page()));
+                                const TrendingPage()));
                   },
                   child: Container(
                       height: 28,

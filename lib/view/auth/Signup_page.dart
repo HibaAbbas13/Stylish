@@ -10,7 +10,7 @@ import '../../data/app_icons.dart';
 import '../Landing_page/landing_page.dart';
 import '../components/Primary_button.dart';
 
-import 'components/Auth_Field.dart';
+import 'components/AuthField.dart';
 
 final _formKey = GlobalKey<FormState>();
 
@@ -67,7 +67,6 @@ class _SignupPageState extends State<SignupPage> {
                       isPassword: false,
                       hintText: 'Username or Email',
                       icon: AppIcons.kUser,
-                      confirmPassword: false,
                     ),
                     SizedBox(
                       height: 31.h,
@@ -77,7 +76,6 @@ class _SignupPageState extends State<SignupPage> {
                       isPassword: true,
                       hintText: 'Password',
                       icon: AppIcons.kLock,
-                      confirmPassword: false,
                     ),
                     SizedBox(
                       height: 31.h,
@@ -87,7 +85,6 @@ class _SignupPageState extends State<SignupPage> {
                       isPassword: true,
                       hintText: 'Password',
                       icon: AppIcons.kLock,
-                      confirmPassword: true,
                     ),
                     SizedBox(
                       height: 19.h,

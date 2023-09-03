@@ -4,10 +4,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../data/app_colors.dart';
 import '../../../data/app_typography.dart';
 
-class CustomContainer extends StatelessWidget {
+class DropDownContainer extends StatelessWidget {
   final String text1;
   final String text2;
-  const CustomContainer({
+  const DropDownContainer({
     super.key,
     required this.text1,
     required this.text2,

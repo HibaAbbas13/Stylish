@@ -7,7 +7,7 @@ import '../../../data/app_assets.dart';
 
 // ignore: camel_case_types
 class CardView extends StatefulWidget {
-  CardView({super.key, required TextEditingController controller});
+  const CardView({super.key, required TextEditingController controller});
 
   @override
   State<CardView> createState() => _CardViewState();

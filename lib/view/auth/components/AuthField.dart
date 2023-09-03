@@ -9,16 +9,16 @@ import 'Validation.dart';
 class AuthField extends StatefulWidget {
   final TextEditingController controller;
   final bool isPassword;
-  final bool confirmPassword;
+
   final String hintText;
   final String icon;
-  const AuthField(
-      {super.key,
-      required this.controller,
-      this.isPassword = false,
-      required this.hintText,
-      required this.icon,
-      required this.confirmPassword});
+  const AuthField({
+    super.key,
+    required this.controller,
+    this.isPassword = false,
+    required this.hintText,
+    required this.icon,
+  });
 
   @override
   State<AuthField> createState() => _AuthFieldState();
@@ -40,9 +40,6 @@ class _AuthFieldState extends State<AuthField> {
       obscureText: widget.isPassword ? isObscure : false,
       validator: (value) {
         if (widget.isPassword) {
-          return CustomValidator.validatePassword(value);
-        }
-        if (widget.confirmPassword) {
           return CustomValidator.validatePassword(value);
         } else {
           return CustomValidator.validateUsername(value);

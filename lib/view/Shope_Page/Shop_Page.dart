@@ -5,10 +5,10 @@ import 'package:elearning_app/models/ColorButtonModel.dart';
 import 'package:elearning_app/models/TrendingData.dart';
 
 import 'package:elearning_app/view/Shope_Page/components/WrapCard.dart';
-import 'package:elearning_app/view/Shope_Page/components/WhiteButton.dart';
+import 'package:elearning_app/view/Shope_Page/components/White-button.dart';
 import 'package:elearning_app/view/components/Filter_row.dart';
 
-import 'package:elearning_app/view/components/Rating_builder.dart';
+import 'package:elearning_app/view/components/Rating_row.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -17,7 +17,7 @@ import '../../models/ShopData.dart';
 
 import '../Trending_Products/Components/Trending_products.dart';
 import 'components/Card_view.dart';
-import 'components/ColorButton.dart';
+import 'components/Color_button.dart';
 
 // ignore: camel_case_types
 class ShopPage extends StatefulWidget {
@@ -195,7 +195,7 @@ class _ShopPageState extends State<ShopPage> {
                 itemCount: colorbutton.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return ColorCard(
+                  return ColorButton(
                     colorbutton: colorbutton[index],
                   );
                 },

@@ -14,19 +14,19 @@ import '../../models/TrendingData.dart';
 import '../Home_page/Components/Search_field.dart';
 
 // ignore: camel_case_types
-class Trending_Page extends StatefulWidget {
-  const Trending_Page({
+class TrendingPage extends StatefulWidget {
+  const TrendingPage({
     super.key,
   });
 
   @override
-  State<Trending_Page> createState() => _Trending_PageState();
+  State<TrendingPage> createState() => _TrendingPageState();
 }
 
 final _searchController = TextEditingController();
 
 // ignore: camel_case_types
-class _Trending_PageState extends State<Trending_Page> {
+class _TrendingPageState extends State<TrendingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,13 +58,13 @@ class _Trending_PageState extends State<Trending_Page> {
         ),
         body: SingleChildScrollView(
             child: Padding(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 child: Column(children: [
                   SearchField(controller: _searchController),
                   SizedBox(
                     height: 16.h,
                   ),
-                  FilterRow(
+                  const FilterRow(
                     text: "52,082+ Items",
                   ),
                   SizedBox(

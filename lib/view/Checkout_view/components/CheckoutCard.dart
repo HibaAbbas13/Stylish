@@ -1,6 +1,6 @@
 import 'package:elearning_app/view/Cart_Page/Cart_Page.dart';
 
-import 'package:elearning_app/view/components/Rating_builder.dart';
+import 'package:elearning_app/view/components/Rating_row.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

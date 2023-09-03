@@ -2,7 +2,7 @@ import 'package:elearning_app/data/app_colors.dart';
 import 'package:elearning_app/data/app_typography.dart';
 
 import 'package:elearning_app/models/TrendingData.dart';
-import 'package:elearning_app/view/components/Rating_builder.dart';
+import 'package:elearning_app/view/components/Rating_row.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

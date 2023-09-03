@@ -9,7 +9,7 @@ import '../../data/app_colors.dart';
 import '../components/Primary_button.dart';
 import 'Forget_pass.dart';
 import 'Signup_page.dart';
-import 'components/Auth_Field.dart';
+import 'components/AuthField.dart';
 
 final _formKey = GlobalKey<FormState>();
 
@@ -58,7 +58,6 @@ class _LogInPageState extends State<LogInPage> {
                         controller: _emailController,
                         hintText: 'Username or Email',
                         icon: AppIcons.kUser,
-                        confirmPassword: false,
                       ),
                       SizedBox(height: 30.h),
                       AuthField(
@@ -66,7 +65,6 @@ class _LogInPageState extends State<LogInPage> {
                         isPassword: true,
                         hintText: 'Password',
                         icon: AppIcons.kLock,
-                        confirmPassword: false,
                       ),
                     ],
                   ),

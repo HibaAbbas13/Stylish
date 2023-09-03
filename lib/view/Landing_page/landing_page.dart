@@ -22,7 +22,7 @@ class _LandingPageState extends State<LandingPage> {
   bool is_selected = false;
   List<Widget> pages = [
     const Home_page(),
-    const Trending_Page(),
+    const TrendingPage(),
     Container(),
     const ShopPage(),
     Container()

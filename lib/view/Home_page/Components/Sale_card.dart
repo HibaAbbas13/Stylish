@@ -2,7 +2,7 @@ import 'package:elearning_app/data/app_colors.dart';
 import 'package:elearning_app/data/app_icons.dart';
 import 'package:elearning_app/data/app_typography.dart';
 import 'package:elearning_app/models/OfferData.dart';
-import 'package:elearning_app/view/components/Rating_builder.dart';
+import 'package:elearning_app/view/components/Rating_row.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -15,8 +15,9 @@ class SalesCard extends StatelessWidget {
 
   final _searchcontroller = TextEditingController();
 
+  @override
   Widget build(BuildContext context) {
-    final ScrollController _scrollController =
+    final ScrollController scrollController =
         ScrollController(initialScrollOffset: 0);
     return Stack(
       alignment: Alignment.center,
@@ -117,10 +118,9 @@ class SalesCard extends StatelessWidget {
             top: 90,
             child: InkWell(
                 onTap: () {
-                  int nextIndex =
-                      _scrollController.position.pixels ~/ 210.h + 1;
+                  int nextIndex = scrollController.position.pixels ~/ 210.h + 1;
                   if (nextIndex < 3) {
-                    _scrollController.animateTo(nextIndex * 210.h,
+                    scrollController.animateTo(nextIndex * 210.h,
                         duration: const Duration(milliseconds: 500),
                         curve: Curves.easeIn);
                   }
